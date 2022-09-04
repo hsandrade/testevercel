@@ -1,13 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hello World</title>
+    <title>Erick Simões de Andrade - Página Inicial</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+        crossorigin="anonymous"></script>
 </head>
+
 <body>
-    Hello World <br>
-    Novo
+    <h1>Erick Simões de Andrade</h1>
+    <h2>Meu currículo online</h2>
+
+    <!-- Uma lista de cards, defindo a largura de 1 coluna para dispositivos com tela pequena (mobile),
+        e a partir de dispositivos com tamanho de tela mediana serão exibidos 4 colunas 
+    -->
+    <div class="row row-cols-1 row-cols-md-4 g-4">
+        <div class="col">
+            <div class="card">
+                <img src="..." class="card-img-top" >
+                <div class="card-body">
+                    <h5 class="card-title">Sobre mim</h5>
+                    <p class="card-text">Conheça um pouco mais sobre meus hábitos e atividades.</p>
+                    <a href="sobre.html" class="btn btn-primary">Ver mais sobre o Erick</a>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card">
+                <img src="..." class="card-img-top" >
+                <div class="card-body">
+                    <h5 class="card-title">Formação</h5>
+                    <p class="card-text">Aqui eu apresento minha formatação educacional.</p>
+                    <a href="formacao.html" class="btn btn-primary">Ver Formação</a>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card">
+                <img src="..." class="card-img-top" >
+                <div class="card-body">
+                    <h5 class="card-title">Portifólio</h5>
+                    <p class="card-text">Conheça meus trabalhos feitos até agora!</p>
+                    <a href="portifólio.html" class="btn btn-primary">Ver Portifólio</a>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card">
+                <img src="..." class="card-img-top" >
+                <div class="card-body">
+                    <h5 class="card-title">Contato</h5>
+                    <p class="card-text">Preencha o formulário e entre em contato comigo.</p>
+                    <a href="contato.html" class="btn btn-primary">Abrir Formulário</a>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
+
 </html>
