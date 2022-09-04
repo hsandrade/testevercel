@@ -1,3 +1,10 @@
+/**
+* Estou usando uma fonte grátis chamada Good Vibes para dar
+* formatação diferenciada.
+* O @font-face permite definir uma fonte customizada que será lida pelo navegador,
+* precisando apenas preencher os atributos para identificação da fonte posteriormente,
+* e o caminho onde o arquivo contendo as fontes está.
+*/
 @font-face {
     font-family: 'Good Vibes';
     src: url('../fontes/GoodVibes.woff2') format('woff2'),
@@ -7,11 +14,46 @@
     font-display: swap;
 }
 
+/**
+Aplica no body a formatação padrão para utilizar a fonte customizada,
+e um espaçamento nas bordas internas para que o texto não fique colado no navegador.
+*/
 body {
     font-family: 'Good Vibes','Arial' !important;
     padding: 20px;
 }
 
+/**
+Faz uma formatação no body apenas das páginas internas, que tiverem o class="conteudo-interno",
+e também em qualquer página com os elementos h1 e h2.
+*/
+body.conteudo-interno, h1, h2, .card-body, .card-title, .card-text {
+    text-align: center;
+}
+
+/**
+Para os links <a> com a class="btn", forço que a fonte seja o padrão Arial ou Vernada, para ficar mais legível.
+*/
 a.btn {
     font-family: 'Arial','Verdana' !important;
+}
+
+/**
+Formatação do formulário, para ficar centralizado na página e ocupar no máximo
+400px de largura, além de dar um espaçamento adicional na margem inferior, para
+que o botão de voltar não fique muito próximo.
+*/
+form {
+    max-width: 400px;
+    margin: auto;
+    margin-bottom: 30px;
+}
+
+/**
+Formata o div que agrupa as cards, para ter uma largura máxima de 400px e ficar centralizado, 
+forçando o modo de exibição com 1 coluna independente do tamanho dispositivo sem ficar muito esticado.
+*/
+#cardPrincipal {
+    max-width: 400px;
+    margin: auto;
 }

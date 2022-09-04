@@ -14,15 +14,35 @@
         crossorigin="anonymous"></script>
 </head>
 
-<body>
+<body class="conteudo-interno">
     <h1>Erick Simões de Andrade</h1>
     <h2>Contato</h2>
+
     <p>
-        Nome <br>
-        Telefone com DDD <br>
-        E-mail
+        Preencha o formulário abaixo e envie, entrarei em contato com você o mais breve possível!
     </p>
-        
+
+    <form>
+        <div class="mb-3">
+            <label for="nome" class="form-label">Seu nome</label>
+            <input type="text" class="form-control" id="nome">
+        </div>
+
+        <div class="mb-3">
+            <label for="email" class="form-label">Seu e-mail</label>
+            <input type="email" class="form-control" id="email" aria-describedby="emailDescricao">
+            <div id="emailDescricao" class="form-text">Não se preocupe, não vou usar seu email para spam! :D</div>
+        </div>
+
+        <div class="mb-3">
+            <label for="telefone" class="form-label">Telefone</label>
+            <input type="text" class="form-control" id="telefone" aria-describedby="telDescricao">
+            <div id="telDescricao" class="form-text">Informe seu telefone com DDD</div>
+        </div>
+       
+        <button type="submit" class="btn btn-primary">Enviar</button>
+    </form>
+
     <a href="index.html" class="btn btn-secondary voltar">Voltar</a>
 </body>
 
