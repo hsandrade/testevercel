@@ -1,0 +1,17 @@
+@font-face {
+    font-family: 'Good Vibes';
+    src: url('../fontes/GoodVibes.woff2') format('woff2'),
+        url('../fontes/GoodVibes.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+body {
+    font-family: 'Good Vibes','Arial' !important;
+    padding: 20px;
+}
+
+a.btn {
+    font-family: 'Arial','Verdana' !important;
+}
